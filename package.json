@@ -1,8 +1,8 @@
 {
-  "name": "mcp-servers-monorepo",
-  "version": "1.0.0",
-  "scripts": {
-    "start:slack": "npx -y supergateway --port $PORT --stdio \"npx -y @modelcontextprotocol/server-slack\"",
-    "start:gmail": "npx -y supergateway --port $PORT --stdio \"npx -y @gongrzhe/server-gmail-autoauth-mcp\""
-  }
+    "name": "mcp-servers-monorepo",
+    "version": "1.0.0",
+    "scripts": {
+        "start:slack": "npx -y supergateway --port $PORT --stdio \"npx -y @modelcontextprotocol/server-slack\"",
+        "start:gmail": "npx -y supergateway --port $PORT --stdio \"npx -y @martinzarfl/mail-mcp\""
+    }
 }
