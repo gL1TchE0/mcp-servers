@@ -1,12 +1,8 @@
 {
-  "name": "mcp-gateway-hub",
+  "name": "mcp-servers-monorepo",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "start": "node gateway.js"
-  },
-  "dependencies": {
-    "express": "^4.19.2",
-    "http-proxy-middleware": "^3.0.0"
+    "start:slack": "npx -y supergateway --port $PORT --stdio \"npx -y @modelcontextprotocol/server-slack\"",
+    "start:gmail": "npx -y supergateway --port $PORT --stdio \"npx -y @gongrzhe/server-gmail-autoauth-mcp\""
   }
 }
